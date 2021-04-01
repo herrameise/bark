@@ -12,25 +12,25 @@ $ sudo apt-get install libgtk-3-dev
 
 ## Build and Install
 
-Download the wxWidgets 3.1.1 [source](https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2) and extract:
+Download the wxWidgets 3.1.4 [source](https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2) and extract:
 ```bash
-$ bunzip2 wxWidgets-3.1.1.tar.bz2
-$ tar xvf wxWidgets-3.1.1.tar
-$ cd wxWidgets-3.1.1/
+$ bunzip2 wxWidgets-3.1.4.tar.bz2
+$ tar xvf wxWidgets-3.1.4.tar
+$ cd wxWidgets-3.1.4/
 ```
 
 Create a dedicated build directory, descend into the build directory, and configure as follows:
 ```bash
-wxWidgets-3.1.1/$ mkdir gtk3-build
-wxWidgets-3.1.1/$ cd gtk3-build
-wxWidgets-3.1.1/gtk3-build/$ ../configure --enable-debug --with-gtk=3
+wxWidgets-3.1.4/$ mkdir gtk3-build
+wxWidgets-3.1.4/$ cd gtk3-build
+wxWidgets-3.1.4/gtk3-build/$ ../configure --enable-debug --with-gtk=3
 ```
 
 Make and install:
 ```bash
-wxWidgets-3.1.1/gtk3-build/$ make -j$(nproc)
-wxWidgets-3.1.1/gtk3-build/$ sudo make install
-wxWidgets-3.1.1/gtk3-build/$ sudo ldconfig
+wxWidgets-3.1.4/gtk3-build/$ make -j$(nproc)
+wxWidgets-3.1.4/gtk3-build/$ sudo make install
+wxWidgets-3.1.4/gtk3-build/$ sudo ldconfig
 ```
 
 ## wxFormBuilder

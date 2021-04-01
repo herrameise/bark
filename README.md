@@ -33,7 +33,7 @@ bin/$ ./barkapp
 
 If you get the following error, you likely skipped the `make install` command above (the BARK core library was not installed to `/usr/local/lib`).
 ```bash
-./barkapp 
+bin/$ ./barkapp
 ./barkapp: error while loading shared libraries: libbark.so: cannot open shared object file: No such file or directory
 ```
 
